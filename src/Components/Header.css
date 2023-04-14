@@ -1,0 +1,27 @@
+.head h3{
+    color: darkblue;
+    font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+    align-items: center;
+    padding: 0%;
+    margin-top: 100px;
+    top: 0%;
+}
+
+
+.head{     
+    align-items: center;   
+    overflow: hidden;
+    background-color:bisque;  
+    height: 500px;  
+    width: 100%;  
+    min-width: 100%;
+    position: relative;
+    margin-top: 48px;
+    border: 10px darkblue;
+ 
+}
+        
+
+

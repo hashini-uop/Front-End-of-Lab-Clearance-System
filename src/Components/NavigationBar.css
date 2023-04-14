@@ -1,0 +1,105 @@
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+    position: absolute;
+    overflow: auto;
+    width:100% ; 
+    box-sizing: border-box;
+    float: right;
+    top: 0;
+    min-width: 1000px;
+    height: 63px;
+    clear: both;
+    float: none;
+    overflow:hidden;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+    
+
+    /* margin-bottom : "20px"  */
+    
+    
+
+}
+
+
+
+li{
+    text-align: center;
+    border-bottom: 1 px solid #555;
+    float : right;
+    /* border: 1px solid darkblue; */
+    border-radius: 30px;
+    
+    
+}
+
+.nav-border{
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    display: block;
+    width: 100%;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: solid;
+    font-family: cursive;
+    
+
+}
+
+.li ul{
+    padding: 0px;
+    margin : 0px;
+
+}
+
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    display: block;
+    width: 100px;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding-top: 10px;
+    margin-top: 10px;
+    
+
+}
+
+
+
+.nav li :hover {
+    /* background-color: rgb(4, 4, 32); */
+    color: green;
+    /* text-decoration: underline; */
+   
+
+   
+}
+
+a:active {
+    /* background-color: #1dad78; */
+    color: chartreuse;
+    
+    text-decoration: underline;
+}
+
+
+
+
+

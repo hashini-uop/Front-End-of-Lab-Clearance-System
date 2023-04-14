@@ -1,0 +1,28 @@
+.wide{
+    width:80%;
+    padding: 10px 10px;
+    background-position: center;
+    align-items: center;
+    height: 610px;
+    margin-top: 25px;
+    margin-left: 120px;
+    border: solid ;
+    border-color: darkblue;
+    overflow: hidden;
+    position: unset;
+    min-width: calc(1000px - 2*170px)
+    
+    
+}
+
+.container-fluid{
+    border: darkblue;
+    padding: 0px 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.li{
+    color: red;
+}
+

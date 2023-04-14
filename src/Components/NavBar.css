@@ -1,0 +1,27 @@
+.me-auto{
+    color: aliceblue;
+    
+}
+
+    
+
+.me-auto :hover{
+    color: green;
+    text-decoration: underline;
+    background-color: darkblue;
+    transition: 200ms ease-in;
+}
+
+.me-auto :active{
+    color: red;
+    text-decoration: underline;
+   
+   
+}
+
+
+
+
+Container{
+    padding-top: 40px;
+}
