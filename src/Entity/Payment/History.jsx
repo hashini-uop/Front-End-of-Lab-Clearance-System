@@ -10,6 +10,7 @@ function History() {
 
     const[payment , setPayment] = useState([])
     const{p_id}=useParams()
+    const[search , setSearch] = useState("")
 
     useEffect(() => {
         loadPayments();
@@ -35,6 +36,7 @@ function History() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              onChange={(e) => setSearch(e.target.value)}
             />
             <Button variant="outline-primary"><img src='./images/searchIcon.png'></img></Button></Form></Col></Row>
     <Table striped bordered hover size="sm" className='table border shadow '>
@@ -52,8 +54,12 @@ function History() {
       </thead>
       <tbody>
         {
-            payment.map((payment , index) => (
-                <tr>
+            payment.filter((payment) => {
+              return search.toLowerCase() =="" ? payment : payment.equipment_name.
+              toLowerCase().includes(search)
+            })
+            .map((payment , index) => (
+                <tr key={payment.p_id}>
                 <th key={index}>{index+1}</th>
                 
                 <td>{payment.user_regNo}</td>

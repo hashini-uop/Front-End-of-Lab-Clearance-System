@@ -34,6 +34,9 @@ function ChemLab() {
   //       .then((response) => {setSearchResults(response.data.result)})
   //     },[])
   // //to here
+  console.log(search)
+
+
 
   return (
     <div>
@@ -47,7 +50,7 @@ function ChemLab() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-            // onChange={(e) => setSearch(e.target.value)}
+             onChange={(e) => setSearch(e.target.value)}
             />
 
             {/* {searchResults.filter((item) =>{
@@ -78,8 +81,12 @@ function ChemLab() {
         </thead>
         <tbody>
           {
-            equipmnet.map((equipmnet, index) => (
-              <tr>
+            // equipmnet.map((equipmnet, index) => (
+              equipmnet.filter((equipmnet) => {
+                return search.toLowerCase() =="" ? equipmnet : equipmnet.name.
+                toLowerCase().includes(search)
+              }).map((equipmnet, index) => (
+              <tr key={equipmnet.e_id}>
                 <th key={index}>{index + 1}</th>
                 <td>{equipmnet.name}</td>
                 <td>{equipmnet.type}</td>

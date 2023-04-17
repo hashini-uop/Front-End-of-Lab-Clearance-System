@@ -10,6 +10,7 @@ function Lab() {
 
     const[lab , setLab] = useState([])
     const{l_id}=useParams()
+    const[search , setSearch]= useState("")
 
     useEffect(() => {
         loadLab();
@@ -38,6 +39,7 @@ function Lab() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              onChange={(e) => setSearch(e.target.value)}
               
             />
             <Button variant="outline-primary"><img src='./images/searchIcon.png'></img></Button></Form></Col></Row>
@@ -56,8 +58,11 @@ function Lab() {
       </thead>
       <tbody>
         {
-            lab.map((lab, index) => (
-                <tr>
+            lab.filter((lab) => {
+              return search.toLowerCase() =="" ? lab : lab.l_name.
+              toLowerCase().includes(search)
+            }).map((lab, index) => (
+                <tr key={lab.l_id}>
                 <th key={index}>{index+1}</th>
                 <td>{lab.code}</td>
                 <td>{lab.l_name}</td>
