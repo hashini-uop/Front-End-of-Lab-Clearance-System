@@ -54,12 +54,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/Register" element={<Register />} />
-          {/* <Route path="/register" element={<Register/>} /> */}
           <Route path="/Payment" element={<Payment />} />
           <Route path="/Check" element={<ChemLab />} />
           <Route path="/labs" element={<Lab />} />
           <Route path="/Service" element={<Service />} />
-          {/* <Route path="/Profile" element={<Profile/>} /> */}
           <Route path="/Recipt/:p_id" element={<Recipt />} />
           <Route path="/Watch" element={<Watch />} />
           <Route path="/Admin" element={<Admin />} />

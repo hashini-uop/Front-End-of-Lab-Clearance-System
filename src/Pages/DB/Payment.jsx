@@ -40,7 +40,7 @@ function Payment() {
 
   const handleClick=(e)=>{
     e.preventDefault()
-    const student={user_regNo,accNo,user_lab,equipment_name,equipment_price,quantity}
+    const student={user_regNo,accNo,user_lab,equipment_name,equipment_price,quantity , total}
     console.log(student)
     
 
@@ -158,8 +158,8 @@ function Payment() {
                   
                 <Form.Group as={Col} controlId="formGridState">
                     <Form.Label>Price(Rs.)</Form.Label>
-                    <Form.Control placeholder="0.00 "  value={e_price} onChange={handleChange}
-                    //  value={equipment_price} onChange={(e)=>setEquipment_price(e.target.value)}
+                    <Form.Control placeholder="0.00 "  
+                      value={equipment_price} onChange={(e)=>setEquipment_price(e.target.value)}
                       />
 
                   </Form.Group>

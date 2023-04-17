@@ -51,9 +51,9 @@ function Profile() {
                 <Row className='g-0'>
                   <div className="col-md-4  text-center c"
                     style={{ borderTopLeftRadius: '.5rem', borderBottomLeftRadius: '.5rem' }}>
-                    <img src="./login.png"
+                    <img src="../images/avatar2.png"
                       alt="Avatar" className="img-fluid my-5" style={{ width: '80px' }} /></div>
-                  <Col className="col-8 mb-3 my-5 text-white" > <h5><strong>{student.s_fName}</strong></h5>
+                  <Col className="col-8 mb-3 my-5 text-white" > <h5><strong>{student.s_fName} {student.s_lName} </strong></h5>
                     <p>Student</p>
                     <i class="far fa-edit mb-5"></i>
 
@@ -90,7 +90,7 @@ function Profile() {
                 <Row className="pt-1">
                   <Col className="col-6 mb-3">
                     <h6>Email</h6>
-                    <p class="text-muted">{student.s_regNo}</p>
+                    <p class="text-muted">{student.s_regNo}@sci.pdn.ac.lk</p>
 
 
                   </Col>
@@ -126,9 +126,9 @@ function Profile() {
 
                 </Row>
                 <div class="d-flex justify-content-start">
-                  <a href="#!"><img src="./images/facebook1.png" className='"fab fa-facebook fa-lg me-3 "'></img></a>
-                  <a href="#!"><img src="./images/twitter-logo-24.png" className="fab fa-twitter fa-lg me-3 "></img></a>
-                  <a href="#!"><img src="./images/linkedin-square-logo-24.png" className="fab fa-instagram fa-lg"></img></a>
+                  <a href="#!"><img src="../images/facebook1.png" className='"fab fa-facebook fa-lg me-3 "'></img></a>
+                  <a href="#!"><img src="../images/twitter-logo-24.png" className="fab fa-twitter fa-lg me-3 "></img></a>
+                  <a href="#!"><img src="../images/linkedin-square-logo-24.png" className="fab fa-instagram fa-lg"></img></a>
                 </div>
 
               </Card.Text>
